@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Form Elements</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form>
+        <label for="text">Enter Name:</label>
+        <input type="text" id="text" name="text" placeholder="Enter your name">
+      
+        <label for="email">Enter Email:</label>
+        <input type="email" placeholder="Enter youremail">
+      
+        <label for="framework">Choose your framework:</label>
+        <input list="framework" id="framework" placeholder="Start typing...">
+        <datalist id="framework">
+          <option value="React">
+          <option value="Laravel">
+          <option value="CodeIgniter">
+          <option value="Spring Boot">
+          <option value="Django">
+        </datalist>
+      
+        <label for="select">Select Option:</label>
+        <select>
+          <optgroup label="Games">
+            <option value="apple">Football</option>
+            <option value="banana">Rugby</option>
+          </optgroup>
+          <optgroup label="Teams">
+            <option value="carrot">Shabana FC</option>
+            <option value="spinach">Bandari FC</option>
+          </optgroup>
+        </select>
+      
+        <label for="textarea">Textarea:</label>
+        <textarea rows="4" placeholder="Enter your thoughts"></textarea>
+      
+        <fieldset>
+          <legend>Number Adder</legend>
+          <label for="a">First number:</label>
+          <input type="number" id="a" name="a" value="0">
+      
+          <label for="b">Second number:</label>
+          <input type="number" id="b" name="b" value="0">
+      
+          <output name="result" for="a b">0</output>
+        </fieldset>
+      
+        <button type="submit">Submit Form</button>
+      </form>
+</body>
+</html>
