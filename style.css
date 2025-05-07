@@ -1,75 +1,74 @@
-
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f7f9;
-    margin: 0;
-    padding: 2rem;
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    min-height: 100vh;
-}
-  
+/* General form styling */
 form {
-    background-color: #ffffff;
+    width: 700px;
+    margin: 2rem auto;
     padding: 2rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 600px;
-    padding-top: 10px;
-    gap: 1.5rem;
-}
-  
-label {
-    font-weight: 600;
-    margin-bottom: 0.3rem;
-    display: block;
-}
-  
-input,select,textarea,button,output {
-    width: 100%;
-    padding: 12px;
     border: 1px solid #ccc;
-    border-radius: 6px;
-    font-size: 1rem;
+    border-radius: 10px;
+    font-family: sans-serif;
+    background-color: #f9f9f9;
+    font-size: 1.125rem;
+}
+
+label {
+    display: block;
+    margin-top: 1.25rem;
+    font-weight: bold;
+    font-size: 1.125rem;
+}
+
+input,
+select,
+textarea,
+output {
+    width: 100%;
+    padding: 0.75rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1.125rem;
     box-sizing: border-box;
 }
-  
-input:focus,select:focus,textarea:focus {
-    border-color: #007BFF;
-    outline: none;
-    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+
+input[type="checkbox"],
+input[type="radio"] {
+    width: auto;
+    margin-right: 0.5rem;
 }
-  
-fieldset {
-    border: 1px solid #ccc;
-    padding: 1rem;
-    border-radius: 6px;
+
+input[type="color"],
+input[type="file"] {
+    padding: 0.3rem;
 }
-  
-legend {
-    font-weight: bold;
-    padding: 0 0.5rem;
+
+textarea {
+    resize: vertical;
 }
-  
-button {
-    background-color: #007BFF;
-    color: #fff;
+
+input[type="submit"],
+input[type="reset"] {
+    margin-top: 1.5rem;
+    padding: 0.85rem 1.5rem;
+    font-size: 1.125rem;
     border: none;
-    font-weight: bold;
+    border-radius: 6px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    background-color: #007bff;
+    color: white;
 }
-  
-button:hover {
-    background-color: #0056b3;
+
+input[type="reset"] {
+    background-color: #6c757d;
+    margin-left: 1rem;
 }
-  
-output {
-    display: block;
+
+progress,
+meter {
+    width: 100%;
     margin-top: 0.5rem;
-    font-weight: bold;
-    color: #333;
 }
-  
+
+select[multiple] {
+    height: auto;
+    min-height: 120px;
+}
